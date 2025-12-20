@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <div className="flex min-h-screen flex-col items-center bg-base text-primary pt-10  ">
-        <h1 className={librBodoni.className + " lg:text-5xl text-4xl"}>Paola Diaz & Robin Uribe</h1>
+        <h1 id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl"}>Paola Diaz & Robin Uribe</h1>
         <Divider />
         <div className="mt-10 text-center max-w-xl">
           <p className={librBodoni.className + " mb-4 text-2xl"}>
@@ -40,6 +40,16 @@ export default function Home() {
             Estamos muy emocionados de compartir este día tan especial con ustedes. ¡Nos vemos pronto!
           </p>
         </div>
+      </div>
+      <div id="reserva" className="mt-10 text-center max-w-xl">
+        <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl"}>
+          Reserva tu lugar en la boda
+        </p>
+      </div>
+      <div id="contacto" className="mt-10 text-center max-w-xl">
+        <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl"}>
+          Contacto
+        </p>
       </div>
     </>
   );
