@@ -3,6 +3,7 @@ import { Libre_Bodoni } from "next/font/google";
 import Navbar from "./components/navbar";
 
 import base from "../public/base.jpg";
+import Divider from "./components/divider/Divider";
 
 const librBodoni = Libre_Bodoni({
   subsets: ["latin"],
@@ -20,7 +21,8 @@ export default function Home() {
   return (
     <>
       <div className="flex min-h-screen flex-col items-center bg-base text-primary pt-10  ">
-        <h1 className={librBodoni.className + " lg:text-5xl sm:text-1xl"}>Paola Diaz & Robin Uribe</h1>
+        <h1 className={librBodoni.className + " lg:text-5xl text-4xl"}>Paola Diaz & Robin Uribe</h1>
+        <Divider />
         <div className="mt-10 text-center max-w-xl">
           <p className={librBodoni.className + " mb-4 text-2xl"}>
             Mayo 9, 2026 Manzanillo, Colima
@@ -30,8 +32,13 @@ export default function Home() {
           </p>
         </div>
         <Navbar />
-        <div className="lg:w-1/2 sm:w-full sm:p-10">
+        <div className="lg:w-1/2 w-5/6 ">
           <Image src={base} alt="Wedding" />
+        </div>
+        <div className="mt-10 text-center max-w-xl">
+          <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl"}>
+            Estamos muy emocionados de compartir este día tan especial con ustedes. ¡Nos vemos pronto!
+          </p>
         </div>
       </div>
     </>
