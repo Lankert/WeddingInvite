@@ -1,50 +1,41 @@
-# Node modules
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build output
-/dist
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
 /build
 
-# Vite cache
-.vite
+# misc
+.DS_Store
+*.pem
 
-# Local env files
-.env
-.env.*.local
-
-# Logs
+# debug
 npm-debug.log*
 yarn-debug.log*
-pnpm-debug.log*
-*.log
+yarn-error.log*
+.pnpm-debug.log*
 
-# Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+# env files (can opt-in for committing if needed)
+.env*
 
-# OS files
-.DS_Store
-Thumbs.db
+# vercel
+.vercel
 
-# TypeScript
+# typescript
 *.tsbuildinfo
-
-# Coverage and caches
-coverage/
-.cache/
-.parcel-cache/
-
-# Package archives
-*.tgz
-
-# JetBrains
-/.idea
-
-# Optional: ignore lock files only if you intentionally do so (usually keep them)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+next-env.d.ts
