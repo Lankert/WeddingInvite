@@ -26,11 +26,11 @@ const Navbar = () => {
             <li key="reserva" className="mt-6 ml-3">
               <span className="text-lg text-secondary"><a href="#reserva">Reserva</a></span>
             </li>
-            <li key="evento" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#evento">Dress Code</a></span>
+            <li key="dressCode" className="mt-6 ml-3">
+              <span className="text-lg text-secondary"><a href="#dressCode">Dress Code</a></span>
             </li>
-            <li key="hospedaje" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#hospedaje">Show Time</a></span>
+            <li key="showTime" className="mt-6 ml-3">
+              <span className="text-lg text-secondary"><a href="#showTime">Show Time</a></span>
             </li>
             <li key="contacto" className="mt-6 ml-3">
               <span className="text-lg text-secondary"><a href="#contacto">Contacto</a></span>

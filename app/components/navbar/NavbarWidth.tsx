@@ -1,6 +1,7 @@
 'use client';
 import { useState }from "react";
 import { Libre_Bodoni } from "next/font/google";
+import Divider from "../divider/Divider";
 
 const librBodoni = Libre_Bodoni({
   subsets: ["latin"],
@@ -10,23 +11,24 @@ const librBodoni = Libre_Bodoni({
 const NavbarWidth = () => {
     return (
          <div className="hidden lg:block md:block">
-      <ul>
-        <li key="inicio" className="inline m-4 p-2">
+        <ul className="border-t-2 border-secondary">
+        <li key="inicio" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#inicio">Inicio</a></span>  
         </li>
-        <li key="reserva" className="inline m-4 p-2">
+        <li key="reserva" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#reserva">Reserva</a></span>
         </li>
-        <li key="evento" className="inline m-4 p-2">
-          <span className={librBodoni.className + " text-lg text-primary"}><a href="#evento">Dress Code</a></span>
+        <li key="dressCode" className="inline mx-4 px-2">
+          <span className={librBodoni.className + " text-lg text-primary"}><a href="#dressCode">Dress Code</a></span>
         </li>
-        <li key="hospedaje" className="inline m-4 p-2">
-          <span className={librBodoni.className + " text-lg text-primary"}><a href="#hospedaje">Show Time</a></span>
+        <li key="showTime" className="inline mx-4 px-2">
+          <span className={librBodoni.className + " text-lg text-primary"}><a href="#showTime">Show Time</a></span>
         </li>
-        <li key="contacto" className="inline m-4 p-2">
+        <li key="contacto" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#contacto">Contacto</a></span>
         </li>
       </ul>
+      <hr className="border-t-2 border-secondary" />;
     </div>
     );
 };
