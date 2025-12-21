@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="flex flex-col items-center text-primary w-5/6 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto">
-        <h1 id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl"}>Paola Diaz & Robin Uribe</h1>
+        <h1 id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl text-center break-words"}>Paola Diaz & Robin Uribe</h1>
         <Divider />
         <div className="mt-10 text-center max-w-xl">
           <p className={librBodoni.className + " mb-4 text-2xl"}>
