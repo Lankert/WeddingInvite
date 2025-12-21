@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Libre_Bodoni } from "next/font/google";
-import Navbar from "./components/navbar";
 
 import base from "../public/base.jpg";
 import Divider from "./components/divider/Divider";
@@ -21,8 +20,7 @@ const getRemainingDays = (dateString: string) => {
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="flex flex-col items-center text-primary w-5/6 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto">
+      <div className="flex flex-col items-center text-primary w-5/6 px-2 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto border border-secondary">
         <h1 id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl text-center break-words"}>Paola Diaz & Robin Uribe</h1>
         <Divider />
         <div className="mt-10 text-center max-w-xl">
@@ -44,6 +42,5 @@ export default function Home() {
         </div>
       <Sections />
       </div>
-    </div>
   );
 }

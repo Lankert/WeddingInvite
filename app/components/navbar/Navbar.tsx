@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-50 md:hidden lg:hidden">
-      <li key="menu" className="absolute m-1 p-1 bg-secondary-base rounded-lg w-12 text-center" onClick={() => setIsOpen(true)}>
+      <li key="menu" className="absolute m-4 p-2 bg-secondary-base rounded-lg w-12 text-center" onClick={() => setIsOpen(true)}>
           <span className="text-lg text-secondary">☰</span>
         </li>
       <div className={isOpen ? "w-screen h-screen bg-black fixed inset-0 opacity-50" : "hidden"} onClick={() => setIsOpen(false)} />
