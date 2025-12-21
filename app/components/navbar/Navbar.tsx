@@ -9,7 +9,7 @@ const librBodoni = Libre_Bodoni({
 
 const Navbar = () => {
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="sticky top-0 z-50 md:hidden lg:hidden">
