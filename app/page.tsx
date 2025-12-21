@@ -4,6 +4,8 @@ import Navbar from "./components/navbar";
 
 import base from "../public/base.jpg";
 import Divider from "./components/divider/Divider";
+import NavbarWidth from "./components/navbar/NavbarWidth";
+import Sections from "./components/sections";
 
 const librBodoni = Libre_Bodoni({
   subsets: ["latin"],
@@ -19,8 +21,8 @@ const getRemainingDays = (dateString: string) => {
 
 export default function Home() {
   return (
-    <>
-      <div className="flex min-h-screen flex-col items-center bg-base text-primary pt-10  ">
+    <div className="">
+      <div className="flex flex-col items-center text-primary w-5/6 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto">
         <h1 id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl"}>Paola Diaz & Robin Uribe</h1>
         <Divider />
         <div className="mt-10 text-center max-w-xl">
@@ -31,7 +33,7 @@ export default function Home() {
             { getRemainingDays("2026-05-09") } dias restantes
           </p>
         </div>
-        <Navbar />
+        <NavbarWidth />
         <div className="lg:w-1/2 w-5/6 ">
           <Image src={base} alt="Wedding" />
         </div>
@@ -40,17 +42,8 @@ export default function Home() {
             Estamos muy emocionados de compartir este día tan especial con ustedes. ¡Nos vemos pronto!
           </p>
         </div>
+      <Sections />
       </div>
-      <div id="reserva" className="mt-10 text-center max-w-xl">
-        <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl"}>
-          Reserva tu lugar en la boda
-        </p>
-      </div>
-      <div id="contacto" className="mt-10 text-center max-w-xl">
-        <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl"}>
-          Contacto
-        </p>
-      </div>
-    </>
+    </div>
   );
 }
