@@ -21,19 +21,19 @@ const Navbar = () => {
         <div className={librBodoni.className + " w-full h-12 p-1 bg-transparent text-black flex flex-col"}>
           <ul>
             <li key="inicio" className="mt-14 ml-3">
-              <span className="text-lg text-secondary"><a href="#inicio">Inicio</a></span>
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#inicio">Inicio</a></span>
             </li>
             <li key="reserva" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#reserva">Reserva</a></span>
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#reserva">Reserva</a></span>
             </li>
             <li key="dressCode" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#dressCode">Dress Code</a></span>
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#dressCode">Dress Code</a></span>
             </li>
             <li key="showTime" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#showTime">Show Time</a></span>
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#showTime">Show Time</a></span>
             </li>
             <li key="contacto" className="mt-6 ml-3">
-              <span className="text-lg text-secondary"><a href="#contacto">Contacto</a></span>
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#contacto">Contacto</a></span>
             </li>
           </ul>
         </div>

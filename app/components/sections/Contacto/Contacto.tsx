@@ -9,7 +9,7 @@ const librBodoni = Libre_Bodoni({
 
 const Contacto = () => {
     return (
-        <div id="contacto" className="w-full h-auto bg-contacto bg-cover bg-center flex flex-col items-center">
+        <div id="contacto" className="w-full h-auto bg-contacto bg-cover bg-center flex flex-col items-center mb-10">
             <div className="rounded-lg flex flex-col items-center">
                 <h2 className={librBodoni.className + " lg:text-4xl text-2xl text-primary mb-6"}>Contacto</h2>
                 <Image src={message} alt="Phone" width={90} />

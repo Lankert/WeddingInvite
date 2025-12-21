@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </div>
         <NavbarWidth key="navbar-width" />
-        <div key="image-container" className="lg:w-1/2 w-6/7 ">
+        <div key="image-container" className="lg:w-1/2 w-6/7 mt-2 ">
           <Image src={base} alt="Wedding" />
         </div>
         <div key="footer-text" className="mt-10 text-center max-w-xl">
