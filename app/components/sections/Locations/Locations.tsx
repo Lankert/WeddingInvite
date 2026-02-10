@@ -8,10 +8,6 @@ const librBodoni = Libre_Bodoni({
     weight: "400",
 });
 
-const iglesiaOnClick= () => {
-    window.open("https://maps.app.goo.gl/wU4xeBYeeca1za3D8");
-}
-
 const Locations = () => {
     return (
         <div id="locations" className="flex flex-col items-center text-primary pt-10 pb-10 ">
@@ -20,16 +16,14 @@ const Locations = () => {
                 <Image src={church} alt="Iglesia" width={90} />
                 <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl flex flex-col items-center"}>
                     Parroquia de Nuestra Señora del Rosario
-                    <button onClick={iglesiaOnClick} className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">Ver Mapa</button>
+                    <a href="https://maps.app.goo.gl/wU4xeBYeeca1za3D8" target="_self" className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">Ver Mapa</a>
                 </p>
                 <Image src={hotel} alt="Hotel" width={140} />
                 <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl flex flex-col items-center"}>
                     Hotel Las Hadas
-                    <button
-                        onClick={() => window.open("https://maps.app.goo.gl/tXbHYHyFVE3Xk6a86")}
-                        className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">
-                            Ver Mapa
-                        </button>
+                    <a href="https://maps.app.goo.gl/tXbHYHyFVE3Xk6a86" target="_self" className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">
+                        Ver Mapa
+                    </a>
                 </p>
             </div>
         </div>
