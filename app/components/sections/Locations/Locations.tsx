@@ -9,7 +9,7 @@ const librBodoni = Libre_Bodoni({
 });
 
 const iglesiaOnClick= () => {
-    window.open("https://maps.app.goo.gl/wU4xeBYeeca1za3D8", "_blank");
+    window.open("https://maps.app.goo.gl/wU4xeBYeeca1za3D8");
 }
 
 const Locations = () => {
@@ -26,7 +26,7 @@ const Locations = () => {
                 <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl flex flex-col items-center"}>
                     Hotel Las Hadas
                     <button
-                        onClick={() => window.open("https://maps.app.goo.gl/tXbHYHyFVE3Xk6a86", "_blank")}
+                        onClick={() => window.open("https://maps.app.goo.gl/tXbHYHyFVE3Xk6a86")}
                         className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">
                             Ver Mapa
                         </button>

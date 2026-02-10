@@ -34,11 +34,13 @@ export default function Home() {
 
   return (
       <div className="flex flex-col items-center text-primary w-5/6 px-2 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto border border-secondary">
-        <h1 key="title" id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl text-center break-words"}>Paola Diaz & Robin Uribe</h1>
+        <h1 key="title" id="inicio" className={librBodoni.className + " lg:text-5xl text-3xl text-center break-words"}>Robin Arturo & Susana Paola</h1>
         <Divider key="divider" />
         <div key="info" className="mt-10 text-center max-w-xl">
           <p key="location" className={librBodoni.className + " mb-4 text-2xl"}>
-            Mayo 9, 2026 Manzanillo, Colima
+            Mayo 9, 2026
+            <br />
+            Manzanillo, Colima
           </p>
           <p key="days" className={librBodoni.className + " mb-4 text-2xl"}>
             {remainingDays} dias restantes
