@@ -23,6 +23,9 @@ const Navbar = () => {
             <li key="inicio" className="mt-14 ml-3">
               <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#inicio">Inicio</a></span>
             </li>
+            <li key="localidades" className="mt-6 ml-3">
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#locations">Localidades</a></span>
+            </li>
             <li key="reserva" className="mt-6 ml-3">
               <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#reserva">Reserva</a></span>
             </li>
@@ -31,6 +34,12 @@ const Navbar = () => {
             </li>
             <li key="showTime" className="mt-6 ml-3">
               <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#showTime">Show Time</a></span>
+            </li>
+            <li key="gifts" className="mt-6 ml-3">
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#gifts">Mesa de Regalos</a></span>
+            </li>
+            <li key="galeria" className="mt-6 ml-3">
+              <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#galeria">Galería de Fotos</a></span>
             </li>
             <li key="contacto" className="mt-6 ml-3">
               <span className="text-lg text-secondary"><a onClick={() => setIsOpen(false)} href="#contacto">Contacto</a></span>

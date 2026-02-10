@@ -15,6 +15,9 @@ const NavbarWidth = () => {
         <li key="inicio" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#inicio">Inicio</a></span>  
         </li>
+        <li key="localidades" className="inline mx-4 px-2">
+          <span className={librBodoni.className + " text-lg text-primary"}><a href="#locations">Localidades</a></span>
+        </li>
         <li key="reserva" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#reserva">Reserva</a></span>
         </li>
@@ -23,6 +26,12 @@ const NavbarWidth = () => {
         </li>
         <li key="showTime" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#showTime">Show Time</a></span>
+        </li>
+        <li key="gifts" className="inline mx-4 px-2">
+          <span className={librBodoni.className + " text-lg text-primary"}><a href="#gifts">Mesa de Regalos</a></span>
+        </li>
+        <li key="galeria" className="inline mx-4 px-2">
+          <span className={librBodoni.className + " text-lg text-primary"}><a href="#galeria">Galería de Fotos</a></span>
         </li>
         <li key="contacto" className="inline mx-4 px-2">
           <span className={librBodoni.className + " text-lg text-primary"}><a href="#contacto">Contacto</a></span>

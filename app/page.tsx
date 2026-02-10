@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Libre_Bodoni } from "next/font/google";
-import { useMemo } from "react";
+import { useState, useEffect } from "react";
 
 import base from "../public/base.jpg";
 import Divider from "./components/divider/Divider";
@@ -20,7 +22,15 @@ const getRemainingDays = (dateString: string) => {
 }
 
 export default function Home() {
-  const remainingDays = useMemo(() => getRemainingDays("2026-05-09"), []);
+  const [remainingDays, setRemainingDays] = useState(() => getRemainingDays("2026-05-09"));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRemainingDays(getRemainingDays("2026-05-09"));
+    }, 24 * 60 * 60 * 1000); // Update every 24 hours
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
       <div className="flex flex-col items-center text-primary w-5/6 px-2 lg:w-3/4 md:w-3/4 pt-10 md:px-20 bg-base mx-auto border border-secondary">
@@ -44,6 +54,13 @@ export default function Home() {
           </p>
         </div>
       <Sections key="sections" />
+      <div className="fixed bottom-4 right-4 z-50 group">
+        <div className="cursor-pointer text-2xl">🎵</div>
+        <audio controls className="hidden group-hover:block absolute bottom-full right-0 bg-white p-2 rounded shadow-lg">
+          <source src="/Bad%20Bunny%20-%20Ojitos%20Lindos%20ft.%20Bomba%20Est%C3%A9reo.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
       </div>
   );
 }
