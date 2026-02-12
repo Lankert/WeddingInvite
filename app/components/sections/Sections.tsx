@@ -8,7 +8,7 @@ import Galeria from "./Galeria";
 
 const Sections = () => {
     return (
-        <div>
+        <div id="sections" className="flex flex-col w-full ">
             <Locations />
             <Reserva />
             <Dresscode />
