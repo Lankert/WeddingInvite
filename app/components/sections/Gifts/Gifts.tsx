@@ -19,7 +19,7 @@ const Gifts = () => {
                 </p>
                 
                 <p className={librBodoni.className + " mb-8 lg:text-2xl text-1xl flex flex-col items-center"}>
-                    Si desean obsequiarnos algo mas, habra lluvia de sobres en la fiesta.
+                    Si desean obsequiarnos algo más, habrá lluvia de sobres en la fiesta.
                 </p>
             </div>
         </div>

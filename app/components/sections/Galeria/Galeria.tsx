@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Navigation } from "swiper/modules";
 
 const librBodoni = Libre_Bodoni({
     subsets: ["latin"],
@@ -63,13 +64,15 @@ const imageSources = photoFilenames.map((filename, index) => ({
             <h2 className={librBodoni.className + " lg:text-4xl text-2xl"}>Galería de Fotos</h2>
             <div className="mt-6 max-w-2xl text-center lg:text-lg text-md">
                 <p className={librBodoni.className + " mb-8 lg:text-2xl text-1xl flex flex-col items-center"}>
-                    Aqui podras ver las fotos de nuestra session de fotos. Esperemos que las disfruten tanto como nosotros disfrutamos tomandolas.
+                    Aquí podrás ver las fotos de nuestra sesión. Esperamos que las disfruten tanto como nosotros disfrutamos tomándolas.
                 </p>
             </div>
             <div className="w-full max-w-4xl mt-8">
                 <Swiper
+                    modules={[Navigation]}
                     spaceBetween={20}
                     slidesPerView={1}
+                    navigation={true}
                     className="w-full"
                 >
                     {imageSources.map((image, index) => (
@@ -81,6 +84,7 @@ const imageSources = photoFilenames.map((filename, index) => ({
                                     fill
                                     className="object-contain"
                                     priority={index < 3}
+                                    loading={index < 3 ? "eager" : "lazy"}
                                 />
                             </div>
                         </SwiperSlide>

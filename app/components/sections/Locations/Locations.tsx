@@ -30,7 +30,7 @@ const Locations = () => {
                 </p>
                 <Image src={hotel} alt="Hotel" width={140} />
                 <p className={librBodoni.className + " mb-4 lg:text-2xl text-1xl flex flex-col items-center"}>
-                    Hotel Las Hadas
+                    Hotel Las Hadas by Brisas
                     <a href="https://maps.app.goo.gl/tXbHYHyFVE3Xk6a86" target={isMobile ? "_self" : "_blank"} className="bg-secondary p-3 rounded-full ml-2 text-white hover:text-primary">
                         Ver Mapa
                     </a>

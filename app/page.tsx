@@ -25,11 +25,30 @@ export default function Home() {
   const [remainingDays, setRemainingDays] = useState(() => getRemainingDays("2026-05-09"));
 
   useEffect(() => {
+    // Run immediately on mount/refresh to ensure value is up-to-date
+    setRemainingDays(getRemainingDays("2026-05-09"));
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") {
+        setRemainingDays(getRemainingDays("2026-05-09"));
+      }
+    };
+
+    const handleFocus = () => {
+      setRemainingDays(getRemainingDays("2026-05-09"));
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
+    window.addEventListener("focus", handleFocus);
+
     const interval = setInterval(() => {
       setRemainingDays(getRemainingDays("2026-05-09"));
     }, 24 * 60 * 60 * 1000); // Update every 24 hours
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibility);
+      window.removeEventListener("focus", handleFocus);
+    };
   }, []);
 
   return (
@@ -43,7 +62,7 @@ export default function Home() {
             Manzanillo, Colima
           </p>
           <p key="days" className={librBodoni.className + " mb-4 text-2xl"}>
-            {remainingDays} dias restantes
+            {remainingDays} días restantes
           </p>
         </div>
         <NavbarWidth key="navbar-width" />
