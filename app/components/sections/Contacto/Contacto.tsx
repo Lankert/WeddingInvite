@@ -22,7 +22,7 @@ const Contacto = () => {
             <p className={librBodoni.className}>¡Estamos aquí para ayudarte!</p>
 
             <p className={librBodoni.className + " mt-4 text-center text-lg font-bold mb-4"}>Por favor, contesta nuestra encuesta de confirmación de asistencia en el siguiente enlace:</p>
-            <a href="https://forms.gle/https://docs.google.com/forms/d/e/1FAIpQLSeYJdkBvkM4bRmAUOp1RqEyT4s7bXdu1N4_ftJxF84H_jWXaA/viewform?usp=publish-editor" className={librBodoni.className + " mt-4 px-6 py-3 bg-primary text-white rounded-lg text-lg font-bold hover:bg-primary-dark transition-colors duration-300"}>
+            <a href="https://forms.gle/YLrCP8eTdcquEhFh8" className={librBodoni.className + " mt-4 px-6 py-3 bg-primary text-white rounded-lg text-lg font-bold hover:bg-primary-dark transition-colors duration-300"}>
                 Confirmar Asistencia
             </a>
         </div>
