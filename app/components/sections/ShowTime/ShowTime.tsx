@@ -14,7 +14,7 @@ const showTime = () => {
                 <h2 className={librBodoni.className + " lg:text-4xl text-2xl"}>Show Time</h2>
             </div>
             <div className="mt-6 lg:max-w-2xl text-center lg:text-lg text-md">
-                <Image width={400} src={timeline} alt="Show Time" />
+                <Image className="ml-8" width={400} src={timeline} alt="Show Time" />
             </div>
         </div>
     );
