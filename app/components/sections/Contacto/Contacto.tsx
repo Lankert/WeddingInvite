@@ -18,7 +18,7 @@ const Contacto = () => {
                 Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a los siguientes números:
             </p>
             <p className={librBodoni.className + " text-lg font-bold mb-4"}>312-193-5886 (Robin Uribe)</p>
-            <p className={librBodoni.className + " text-lg font-bold mb-4"}>312-193-2364 (Paola Díaz)</p>
+            <p className={librBodoni.className + " text-lg font-bold mb-4"}>312-133-2364 (Paola Díaz)</p>
             <p className={librBodoni.className}>¡Estamos aquí para ayudarte!</p>
 
             <p className={librBodoni.className + " mt-4 text-center text-lg font-bold mb-4"}>Por favor, contesta nuestra encuesta de confirmación de asistencia en el siguiente enlace:</p>
